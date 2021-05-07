@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "sapse.sap-ux-fiori-tools-extension-pack",
+        "saposs.vscode-ui5-language-assistant",
+        "ms-vscode-remote.vscode-remote-extensionpack"
+    ]
+}

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Forces a reauthentication if required, first.
+# Then call cf with the arguments given, truncating
+# the output to the width of the terminal.
+# Todo: Extract application name for quicker fetch
+
+cf default-env $1
