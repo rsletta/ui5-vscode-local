@@ -1,0 +1,21 @@
+{
+  "generator-template-ui5-project": {
+    "projectname": "localVSCodeDemo",
+    "namespace": "com.rikosjett",
+    "platform": "Application Router @ Cloud Foundry",
+    "viewtype": "XML",
+    "ui5libs": "Content delivery network (OpenUI5)",
+    "newdir": false,
+    "namespaceURI": "com/rikosjett",
+    "opa5pos": [
+      "Main"
+    ],
+    "opa5Journeys": [
+      "Main"
+    ],
+    "uimodules": [
+      "uimodule"
+    ],
+    "setupCompleted": true
+  }
+}
