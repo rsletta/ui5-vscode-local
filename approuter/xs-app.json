@@ -4,7 +4,14 @@
   "logout": {
     "logoutEndpoint": "/do/logout"
   },
-  "routes": [
+  "routes": [	
+  {
+    "csrfProtection": true,
+    "source": "^/api/(.*)$",
+    "target": "/api/$1",
+    "destination": "some-api",
+    "authenticationType": "none"
+  },
     {
       "source": "^/uimodule/(.*)$",
       "target": "$1",
