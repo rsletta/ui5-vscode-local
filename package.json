@@ -2,7 +2,10 @@
   "name": "localVSCodeDemo",
   "version": "0.0.1",
   "scripts": {
-    "start": "ui5 serve --config=uimodule/ui5.yaml  --open index.html",
+    "start": "run-p start:ui5 start:browser",
+    "start:ui5": "ui5 serve --config=uimodule/ui5.yaml",
+    "start:browser": "wait-on tcp:5000 && sleep 2s && echo 'open http://localhost:5000/index1.html'",
+    "start:approuter": "cd uimodule/webapp && node ../../node_modules/@sap/approuter/approuter.js",
     "build:ui": "run-s  build:uimodule",
     "test": "run-s lint karma",
     "karma-ci": "karma start karma-ci.conf.js",
@@ -36,5 +39,10 @@
       "ui5-middleware-cfdestination",
       "ui5-task-zipper"
     ]
+  },
+  "dependencies": {
+    "@sap/approuter": "^9.3.0",
+    "@sap/html5-repo-mock": "^2.0.1",
+    "wait-on": "^5.2.1"
   }
 }

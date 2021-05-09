@@ -25,6 +25,7 @@ server:
       afterMiddleware: compression
       configuration:
         debug: true
-        port: 1091
-        xsappJson: approuter/xs-app.json
-        destinations: []
+        authenticationMethod: "route"
+        allowServices: true
+        port: 5000
+        xsappJson: xs-app.json
