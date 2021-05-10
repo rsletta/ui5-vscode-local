@@ -29,3 +29,10 @@ server:
         allowServices: true
         port: 5000
         xsappJson: xs-app.json
+builder:
+  customTasks:
+    -  name: ui5-task-zipper
+       afterTask: uglify
+       configuration:
+         includeDependencies: false
+         archiveName: uimodule

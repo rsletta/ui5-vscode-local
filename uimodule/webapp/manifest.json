@@ -8,7 +8,22 @@
       "version": "0.0.8"
     },
     "title": "{{appTitle}}",
-    "description": "{{appDescription}}"
+    "description": "{{appDescription}}",
+    "crossNavigation": {
+      "inbounds": {
+        "fe-inbound": {
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          },
+          "semanticObject": "localDemo",
+          "action": "display",
+          "title": "Local VS Code demo",
+          "subTitle": "",
+          "icon": ""
+        }
+      }
+    }
   },
   "sap.ui": {
     "technology": "UI5",
@@ -74,7 +89,9 @@
         {
           "name": "RouteMainView",
           "pattern": "RouteMainView",
-          "target": ["TargetMainView"]
+          "target": [
+            "TargetMainView"
+          ]
         }
       ],
       "targets": {
