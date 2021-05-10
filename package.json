@@ -1,6 +1,6 @@
 {
   "name": "localVSCodeDemo",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "scripts": {
     "start": "run-p start:ui5 start:browser",
     "start:ui5": "ui5 serve --config=uimodule/ui5.yaml",
