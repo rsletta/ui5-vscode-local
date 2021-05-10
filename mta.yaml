@@ -1,6 +1,6 @@
 ID: localVSCodeDemo
 _schema-version: 3.2.0
-version: 0.0.8
+version: 0.0.9
 parameters:
   enable-parallel-deployments: true
 modules:
