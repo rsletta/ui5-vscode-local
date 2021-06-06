@@ -27,6 +27,7 @@ server:
         debug: true
         authenticationMethod: "route"
         allowServices: true
+        allowLocalDir: true
         port: 5000
         xsappJson: xs-app.json
 builder:
