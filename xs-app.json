@@ -12,8 +12,9 @@
 		{
 			"source": "^/index1.html",
 			"target": "index1.html",
-			"localDir": "uimodule/",
-			"cacheControl": "no-cache, no-store, must-revalidate"
+			"localDir": "uimodule",
+			"cacheControl": "no-cache, no-store, must-revalidate",
+			"authenticationType": "xsuaa"
 		}
 	]
 }
