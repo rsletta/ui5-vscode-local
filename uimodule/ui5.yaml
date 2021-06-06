@@ -19,12 +19,13 @@ server:
     - name: ui5-middleware-livereload
       afterMiddleware: compression
       configuration:
+        debug: false
         port: 35729
         path: uimodule/webapp
     - name: ui5-middleware-cfdestination
       afterMiddleware: compression
       configuration:
-        debug: true
+        debug: false
         authenticationMethod: "route"
         allowServices: true
         allowLocalDir: true
