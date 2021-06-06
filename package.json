@@ -4,7 +4,7 @@
   "scripts": {
     "start": "run-p start:ui5 start:browser",
     "start:ui5": "ui5 serve --config=uimodule/ui5.yaml",
-    "start:browser": "wait-on tcp:5000 && sleep 2s && echo 'open http://localhost:5000/index1.html'",
+    "start:browser": "wait-on tcp:5000 && echo '-> open http://localhost:5000/index1.html'",
     "start:approuter": "cd uimodule/webapp && node ../../node_modules/@sap/approuter/approuter.js",
     "build:ui": "run-s  build:uimodule",
     "test": "run-s lint karma",
