@@ -19,19 +19,19 @@
     "build:uimodule": "ui5 build --config=uimodule/ui5.yaml --clean-dest --dest uimodule/dist --include-task=generateManifestBundle"
   },
   "devDependencies": {
-    "@ui5/cli": "^2.8.1",
+    "@ui5/cli": "^2.11.0",
     "cross-var": "^1.1.0",
-    "eslint": "^7.18.0",
-    "karma": "^6.0.1",
+    "eslint": "^7.28.0",
+    "karma": "^6.3.3",
     "karma-chrome-launcher": "^3.1.0",
     "karma-coverage": "^2.0.3",
-    "karma-ui5": "^2.3.2",
-    "mbt": "^1.1.0",
+    "karma-ui5": "^2.3.3",
+    "mbt": "^1.2.1",
     "npm-run-all": "^4.1.5",
     "shx": "^0.3.3",
-    "ui5-middleware-cfdestination": "^0.4.0",
-    "ui5-middleware-livereload": "^0.5.1",
-    "ui5-task-zipper": "^0.4.2"
+    "ui5-middleware-cfdestination": "^0.6.0",
+    "ui5-middleware-livereload": "^0.5.4",
+    "ui5-task-zipper": "^0.4.3"
   },
   "ui5": {
     "dependencies": [
@@ -41,8 +41,8 @@
     ]
   },
   "dependencies": {
-    "@sap/approuter": "^9.3.0",
+    "@sap/approuter": "^10.4.0",
     "@sap/html5-repo-mock": "^2.0.1",
-    "wait-on": "^5.2.1"
+    "wait-on": "^5.3.0"
   }
 }
