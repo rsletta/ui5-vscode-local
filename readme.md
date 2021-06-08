@@ -2,7 +2,12 @@
 
 Demonstrate a local dev environment for UI5 applications, using VS Code, dev containers, and a couple of UI5 tooling hacks to inject BTP CF functionality in the mix.
 
-##  Tweak for using approuter and XSUAA.
+```bash
+$> npm start
+````
+
+## Tweak for using approuter and XSUAA
+
 Approuter serves proxy page, triggering sign in, and then autoloads the real index.html served by the UI5 tooling.
 
 ```JSON
@@ -10,7 +15,7 @@ Approuter serves proxy page, triggering sign in, and then autoloads the real ind
 ...
     "start": "run-p start:ui5 start:browser",
     "start:ui5": "ui5 serve --config=uimodule/ui5.yaml",
-    "start:browser": "wait-on tcp:5000 && sleep 2s && echo 'open http://localhost:5000/index1.html'",
+    "start:browser": "wait-on tcp:5000 && echo 'open http://localhost:5000/index1.html'",
 ...
 }
 ```
