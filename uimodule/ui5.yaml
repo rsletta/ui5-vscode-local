@@ -31,6 +31,9 @@ server:
         allowLocalDir: true
         port: 5000
         xsappJson: xs-app.json
+        destinations:
+          - name: "some-api"
+            url: "https://pokeapi.co/api/v2/"
 builder:
   customTasks:
     -  name: ui5-task-zipper

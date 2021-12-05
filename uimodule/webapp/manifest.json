@@ -7,6 +7,12 @@
     "applicationVersion": {
       "version": "0.0.9"
     },
+    "dataSources": {
+      "mainService": {
+          "uri": "/some-api",
+          "type": "JSON"
+         }
+    },
     "title": "{{appTitle}}",
     "description": "{{appDescription}}",
     "crossNavigation": {
@@ -67,7 +73,16 @@
         "settings": {
           "bundleName": "com.rikosjett.localVSCodeDemo.i18n.i18n"
         }
-      }
+      },
+      "": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "mainService",
+        "settings": {
+            "defaultBindingMode": "TwoWay",
+            "defaultCountMode": "Inline",
+            "refreshAfterChange": false
+           }
+        }
     },
     "resources": {
       "css": [
