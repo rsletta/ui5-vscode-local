@@ -9,8 +9,9 @@
     },
     "dataSources": {
       "mainService": {
-          "uri": "/some-api",
+          "uri": "api/api/v2/",
           "type": "JSON"
+          
          }
     },
     "title": "{{appTitle}}",
@@ -78,10 +79,12 @@
         "type": "sap.ui.model.json.JSONModel",
         "dataSource": "mainService",
         "settings": {
-            "defaultBindingMode": "TwoWay",
+            "defaultBindingMode": "OneWay",
             "defaultCountMode": "Inline",
             "refreshAfterChange": false
-           }
+           },
+          "preload": true
+
         }
     },
     "resources": {

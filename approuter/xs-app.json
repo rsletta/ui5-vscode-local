@@ -1,6 +1,6 @@
 {
-  "welcomeFile": "uimodule/index.html",
-  "authenticationMethod": "none",
+  "welcomeFile": "comrikosjettlocalVSCodeDemo/",
+  "authenticationMethod": "route",
   "logout": {
     "logoutEndpoint": "/do/logout"
   },
@@ -11,12 +11,6 @@
     "target": "/api/$1",
     "destination": "some-api",
     "authenticationType": "none"
-  },
-    {
-      "source": "^/uimodule/(.*)$",
-      "target": "$1",
-      "authenticationType": "none",
-      "localDir": "uimodule/webapp"
-    }
+  }
   ]
 }

@@ -2,19 +2,17 @@
 	"welcomeFile": "/index.html",
 	"authenticationMethod": "route",
 	"routes": [
-		{
-			"csrfProtection": true,
+		{			
 			"source": "^/api/(.*)$",
-			"target": "/api/$1",
+			"target": "$1",
 			"destination": "some-api",
 			"authenticationType": "none"
 		},
 		{
-			"source": "^/index1.html",
-			"target": "index1.html",
-			"localDir": "uimodule",
-			"cacheControl": "no-cache, no-store, must-revalidate",
-			"authenticationType": "xsuaa"
+			"source": "^(.*)",
+			"target": "$1",
+			"authenticationType": "xsuaa",
+			"service": "html5-apps-repo-rt"
 		}
 	]
 }

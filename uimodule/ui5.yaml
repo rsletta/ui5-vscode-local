@@ -25,15 +25,15 @@ server:
     - name: ui5-middleware-cfdestination
       afterMiddleware: compression
       configuration:
-        debug: false
+        debug: true
         authenticationMethod: "route"
         allowServices: true
         allowLocalDir: true
         port: 5000
-        xsappJson: xs-app.json
-        destinations:
-          - name: "some-api"
-            url: "https://pokeapi.co/api/v2/"
+        xsappJson: xs-app.json       
+        destinations: 
+          - name: some-api
+            url:  https://pokeapi.co
 builder:
   customTasks:
     -  name: ui5-task-zipper
